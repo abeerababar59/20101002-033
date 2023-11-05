@@ -3,112 +3,189 @@
 
 <head>
     <title>My Personal Web Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
-            margin: 20px;
-            border: 2px solid #333;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: white;
+            text-align: center;
             padding: 20px;
         }
 
-        h1, h2, h3 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+        .header h1 {
+            background-color: transparent;
+        }
+
+        .left-column {
+            width: 25%;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .middle-column {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+            padding: 0;
         }
 
         table {
-            border: 2px solid #333;
-            border-collapse: collapse;
             width: 100%;
+            border-collapse: collapse;
         }
 
-        th, td {
+        table,
+        th,
+        td {
             border: 2px solid #333;
-            padding: 5px;
         }
 
         img {
+            display: block;
+            margin: 0 auto;
             border: 2px solid #333;
             padding: 5px;
         }
 
-        ul, ol {
-            margin-left: 20px;
+        .footer {
+            clear: both;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        p {
-            padding: 5px;
+        .footer a {
+            text-decoration: none;
+            color: white;
+            margin: 5px;
+        }
+
+        h1, h2 {
+            background-color: #2d383a;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Social media icons */
+        .footer a.fa {
+            font-size: 24px;
+            margin: 5px;
+            text-decoration: none;
+            color: white;
+            transition: color 0.2s;
+        }
+
+        .footer a.fa:hover {
+            color: #0077B5;
+        }
+
+        /* Additional styles for better spacing */
+        .footer div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .left-column,
+            .middle-column {
+                width: 100%;
+            }
         }
     </style>
 </head>
 
+<body>
+    <div class="header">
+        <h1>Abeera Babar</h1>
+    </div>
 
-    <hr>
+    <div class="middle-column">
+        <img src="uskt-img.png" alt="Description of the image" width="150" height="150">
+        <h2>Introduction</h2>
+        <p>Hey! My name is Abeera Babar. Currently, I am doing a BSCS degree at the University of Sialkot. I have experience working with HTML. I am a social activist and a blogger. I also run a blog page. I am a self-motivated, hardworking, quick learner, and believe in learning from my past mistakes</p>
 
-    <h1>CV</h1>
-    <h2>Abeera Babar</h2>
-    <p>abeerababar@gmail.com</p>
-    <p>03227402341</p>
-    <p>Citi Housing Society, Sialkot</p>
+        <h2>Educational History</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Course and Year</th>
+            </tr>
+            <tr>
+                <td>Matric</td>
+                <td>Allied School</td>
+                <td>Computer Science (2016-2018)</td>
+            </tr>
+            <tr>
+                <td>Intermediate</td>
+                <td>Superior College</td>
+                <td>ICS Physics (2018-2020)</td>
+            </tr>
+            <tr>
+                <td>Bachelors</td>
+                <td>University Of Sialkot</td>
+                <td>Computer Science (2020-2024)</td>
+            </tr>
+        </table>
 
-    <img src="uskt-img.png" alt="Description of the image" width="150" height="150">
+        <h2>Projects Developed</h2>
+        <ul>
+            <li>Hostel Management with Database Connectivity</li>
+            <li>Admission Management (C Sharp)</li>
+        </ul>
 
-    <h2>Educational History</h2>
-    <table>
-        <tr>
-            <th>Degree</th>
-            <th>Institution</th>
-            <th>Course and Year</th>
-        </tr>
-        <tr>
-            <td>Matric</td>
-            <td>Allied School</td>
-            <td>Computer Science (2016-2018)</td>
-        </tr>
-        <tr>
-            <td>Intermediate</td>
-            <td>Superior College</td>
-            <td>ICS Physics (2018-2020)</td>
-        </tr>
-        <tr>
-            <td>Bachelors</td>
-            <td>University Of Sialkot</td>
-            <td>Computer Science (2020-2024)</td>
-        </tr>
-    </table>
+        <h2>Hobbies</h2>
+        <ol>
+            <li>Blogging</li>
+            <li>Cooking or baking</li>
+            <li>Painting</li>
+            <li>Photography</li>
+            <li>Gardening</li>
+        </ol>
 
-    <h2>Professional Skills</h2>
-    <ul>
-        <li>Creative design</li>
-        <li>Complex problem solver</li>
-        <li>Database Management</li>
-        <li>Quick learner</li>
-        <li>Adaptability to change Environment.</li>
-    </ul>
+        <h2>Life Ambition</h2>
+        <p>My ambition in life is to become a lecturer.</p>
 
-    <h2>Projects Developed</h2>
-    <ul>
-        <li>Hostel Management with Database Connectivity</li>
-        <li>Admission Management (C Sharp)</li>
-    </ul>
+        <h2>What I Did for My Country</h2>
+        <p>Though I haven't done anything yet, I'm determined to contribute to my country in the future.</p>
 
-    <h2>Hobbies</h2>
-    <ol>
-        <li>Blogging</li>
-        <li>Cooking or baking</li>
-        <li>Painting</li>
-        <li>Photography</li>
-        <li>Gardening</li>
-    </ol>
+        <h2>What I Want to Do for My Country</h2>
+        <p>I can contribute to my country by using my skills to develop technology that can enhance various aspects of society, such as healthcare systems, educational platforms, government services, and more. This can help improve the quality of life and efficiency of services for the citizens of my country.</p>
+    </div>
 
-    <h2>Life Ambition</h2>
-    <p>My ambition in life is to become a lecturer.</p>
-
-    <h2>What I Did for My Country</h2>
-    <p>Though I haven't done anything yet, I'm determined to contribute to my country in the future."</p>
-
-    <h2>What I Want to Do for My Country</h2>
-    <p>I can contribute to my country by using my skills to develop technology that can enhance various aspects of society, such as healthcare systems, educational platforms, government services, and more. This can help improve the quality of life and efficiency of services for the citizens of my country.</p>
-
+    <div class="footer">
+        <p>Email: abeerababar@gmail.com</p>
+        <div>
+            <i class="fa-sharp fa-solid fa-envelopes"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="<i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+    </div>
 </body>
 
 </html>
